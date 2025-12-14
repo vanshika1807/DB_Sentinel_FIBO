@@ -1,0 +1,12 @@
+<!doctype html><html><body>
+<h3>DB Sentinel (fallback)</h3>
+<p>Connects to <code>/ws/metrics</code> and prints JSON.</p>
+<pre id="out">connecting…</pre>
+<script>
+ const out=document.getElementById('out');
+ const ws=new WebSocket((location.protocol==="https:"?"wss://":"ws://")+location.host+"/ws/metrics");
+ ws.onmessage=e=>out.textContent=e.data;
+ ws.onopen=()=>out.textContent="connected";
+ ws.onclose=()=>out.textContent+="\n(disconnected)";
+</script>
+</body></html>
