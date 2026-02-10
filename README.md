@@ -4,7 +4,7 @@
 # **2️⃣ DB-Sentinel (Java) README.md (it is the part of FIBO incident visualizer)**
 
 ```markdown
-# DB-Sentinel
+# DB-Sentinel -https://devpost.com/software/visuallogs?ref_content=my-projects-tab&ref_feature=my_projects
 
 ## Elevator Pitch
 A customizable Java-based database management system that supports SQL-like operations and dynamic field management, designed to help users interact with data in a flexible and intuitive way.
